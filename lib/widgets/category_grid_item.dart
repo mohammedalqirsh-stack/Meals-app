@@ -27,7 +27,7 @@ class CategoryGridItem extends StatelessWidget {
             ],
             begin:  Alignment.topLeft,
             end:  Alignment.bottomRight,
-            ) 
+            )
         ),
         child:  Text(
           category.title,
@@ -37,5 +37,5 @@ class CategoryGridItem extends StatelessWidget {
       ),
       ),
     );
-}
+} 
 }
