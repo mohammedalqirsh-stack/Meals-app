@@ -18,7 +18,7 @@ class CategoriesScreen extends StatelessWidget {
   .where((meal) => meal.categories.contains(category.id))
   .toList();
 
-    Navigator.of(context).push(
+    Navigator.of(context).push( 
       MaterialPageRoute(
         builder: (ctx) => MealsScreen(
           title:category.title,
@@ -27,14 +27,14 @@ class CategoriesScreen extends StatelessWidget {
          ),
     ),
     );  
-  }
+  } 
 
      
    
   @override
   Widget build(BuildContext context) {
     return 
-       GridView(
+       GridView( 
         padding: EdgeInsets.all(24),
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
@@ -43,10 +43,10 @@ class CategoriesScreen extends StatelessWidget {
           mainAxisSpacing: 20, 
         ),
         children:  [
- 
+        
          for (final category in availableCategories)
          CategoryGridItem(
-          category: category,
+          category: category, 
            onSelectCategory: (){
           _selectCategory(context, category);
          } ,
