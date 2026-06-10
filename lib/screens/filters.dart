@@ -75,16 +75,16 @@ class _FiltersScreenState extends State<FiltersScreen> {
               title: Text( 
                 'Gluten-free',
                 style: Theme.of(context).textTheme.titleLarge!.copyWith(
-                  color: Theme.of(context).colorScheme.background,
+                  color: Theme.of(context).colorScheme.surface,
                 ),
               ),
               subtitle: Text(
                 'Only include gluten-free meals.',
                 style: Theme.of(context).textTheme.labelMedium!.copyWith(
-                  color: Theme.of(context).colorScheme.background,
+                  color: Theme.of(context).colorScheme.surface,
                 ),
               ),
-              activeColor: Theme.of(context).colorScheme.tertiary,
+              activeThumbColor: Theme.of(context).colorScheme.tertiary,
               contentPadding: const EdgeInsets.only(left: 34, right: 22),
             ),
              SwitchListTile(
@@ -97,16 +97,16 @@ class _FiltersScreenState extends State<FiltersScreen> {
               title: Text( 
                 'Lactose-free',
                 style: Theme.of(context).textTheme.titleLarge!.copyWith(
-                  color: Theme.of(context).colorScheme.background,
+                  color: Theme.of(context).colorScheme.surface,
                 ),
               ),
               subtitle: Text(
                 'Only include Lactose-free meals.',
                 style: Theme.of(context).textTheme.labelMedium!.copyWith(
-                  color: Theme.of(context).colorScheme.background,
+                  color: Theme.of(context).colorScheme.surface,
                 ),
               ),
-              activeColor: Theme.of(context).colorScheme.tertiary,
+              activeThumbColor: Theme.of(context).colorScheme.tertiary,
               contentPadding: const EdgeInsets.only(left: 34, right: 22),
             ),
             SwitchListTile(
@@ -119,16 +119,16 @@ class _FiltersScreenState extends State<FiltersScreen> {
               title: Text( 
                 'Vegetarian',
                 style: Theme.of(context).textTheme.titleLarge!.copyWith(
-                  color: Theme.of(context).colorScheme.background,
+                  color: Theme.of(context).colorScheme.surface,
                 ),
               ),
               subtitle: Text(
                 'Only include vegetarian meals.',
                 style: Theme.of(context).textTheme.labelMedium!.copyWith(
-                  color: Theme.of(context).colorScheme.background,
+                  color: Theme.of(context).colorScheme.surface,
                 ),
               ),
-              activeColor: Theme.of(context).colorScheme.tertiary,
+              activeThumbColor: Theme.of(context).colorScheme.tertiary,
               contentPadding: const EdgeInsets.only(left: 34, right: 22),
             ),
             SwitchListTile(
@@ -141,16 +141,16 @@ class _FiltersScreenState extends State<FiltersScreen> {
               title: Text( 
                 'Vegan',
                 style: Theme.of(context).textTheme.titleLarge!.copyWith(
-                  color: Theme.of(context).colorScheme.background,
+                  color: Theme.of(context).colorScheme.surface,
                 ),
               ),
               subtitle: Text(
                 'Only include vagen meals.',
                 style: Theme.of(context).textTheme.labelMedium!.copyWith(
-                  color: Theme.of(context).colorScheme.background,
+                  color: Theme.of(context).colorScheme.surface,
                 ),
               ),
-              activeColor: Theme.of(context).colorScheme.tertiary,
+              activeThumbColor: Theme.of(context).colorScheme.tertiary,
               contentPadding: const EdgeInsets.only(left: 34, right: 22),
             ),
           ],
