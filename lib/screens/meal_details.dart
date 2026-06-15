@@ -26,7 +26,7 @@ class MealDetailsScreen extends ConsumerWidget {
               ).showSnackBar(SnackBar(
                 content: Text(wasAdded ? 'Meal added as a favorite.' : 'Meal removed.'),
                 ),
-                );
+              );
             },
             icon: const Icon(Icons.star),
           ),
