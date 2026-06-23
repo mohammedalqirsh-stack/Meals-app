@@ -45,15 +45,15 @@ class _CategoriesScreenState extends State<CategoriesScreen>
         .toList();
 
     Navigator.of(context).push(
-      MaterialPageRoute(
+      MaterialPageRoute( 
         builder: (ctx) =>
             MealsScreen(title: category.title, meals: filteredMeals),
       ),
     );
-  }
+  }  
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) { 
     return AnimatedBuilder(
       animation: _animationController,
       child: GridView(
@@ -62,13 +62,13 @@ class _CategoriesScreenState extends State<CategoriesScreen>
           crossAxisCount: 2,
           mainAxisSpacing: 24,
           crossAxisSpacing: 24,
-          childAspectRatio: 3 / 2,
+          childAspectRatio: 3 / 2, 
         ),
         children: [
           for (final category in availableCategories)
             CategoryGridItem(
               category: category,
-              onSelectCategory: () {
+              onSelectCategory: () { 
                 _selectCategory(context, category);
               },
             ),
@@ -79,11 +79,11 @@ class _CategoriesScreenState extends State<CategoriesScreen>
             begin: const Offset(0, 0.3),
             end: const Offset(0, 0),
           ).animate(
-            CurvedAnimation(
+            CurvedAnimation( 
               parent: _animationController,
               curve: Curves.easeInOut,
             ),
-          ),
+          ), 
         child: child,
       ),
     );
